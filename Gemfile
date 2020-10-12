@@ -32,6 +32,16 @@ end
 
 group :development do
   gem 'listen', '~> 3.2'
+  gem 'annotate', require: false
+
+  # Code autocompletion
+  gem 'solargraph', require: false
+
+  # Linter/checker for my code
+  gem 'bullet'
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-performance', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
