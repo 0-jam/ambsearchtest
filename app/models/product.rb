@@ -9,6 +9,6 @@
 #
 class Product < ApplicationRecord
   def self.search_by_name(query)
-    where('name like ?', "%#{query}%")
+    where('name ilike ?', "%#{query}%")
   end
 end
