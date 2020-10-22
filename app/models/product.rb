@@ -8,7 +8,5 @@
 #  updated_at :datetime         not null
 #
 class Product < ApplicationRecord
-  def self.search_by_name(query)
-    where('name ilike ?', "%#{query}%")
-  end
+  scope :search_by_name, ->(query) { where('name ilike ?', "%#{query}%") }
 end
