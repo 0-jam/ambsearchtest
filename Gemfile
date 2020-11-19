@@ -35,7 +35,7 @@ group :development do
   gem 'annotate', require: false
 
   # Code autocompletion
-  gem 'solargraph', require: false
+  # gem 'solargraph', require: false
 
   # Linter/checker for my code
   gem 'bullet'
